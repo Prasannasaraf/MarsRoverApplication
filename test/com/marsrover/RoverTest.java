@@ -41,4 +41,13 @@ public class RoverTest {
 
         assertEquals("1 1 N", rover.toString());
     }
+
+    @Test
+    public void roversShouldMoveRightFromEastToSouth() {
+        Rover rover = new Rover(leftMap, rightMap, "E", "1", "1");
+
+        rover.moveRight();
+
+        assertEquals("1 1 S", rover.toString());
+    }
 }

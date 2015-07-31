@@ -22,8 +22,13 @@ public class Rover {
         currentPosition = leftMap.get(currentPosition);
     }
 
+
+    public void moveRight() {
+        currentPosition = rightMap.get(currentPosition);
+    }
     @Override
     public String toString() {
         return xPosition + " " + yPositon + " " + currentPosition;
     }
+
 }
