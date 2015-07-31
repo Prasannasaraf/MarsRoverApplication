@@ -28,8 +28,17 @@ public class RoverTest {
 
     @Test
     public void roverShouldBeEqual() {
-        Rover rover = new Rover(leftMap, rightMap, "S", "1", "1");
+        Rover rover = new Rover(leftMap, rightMap, "E", "1", "1");
 
         assertEquals("1 1 E", rover.toString());
+    }
+
+    @Test
+    public void roversShouldMoveLeftFromEastToNorth() {
+        Rover rover = new Rover(leftMap, rightMap, "E", "1", "1");
+
+        rover.moveLeft();
+
+        assertEquals("1 1 N", rover.toString());
     }
 }

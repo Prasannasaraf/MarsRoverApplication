@@ -18,6 +18,9 @@ public class Rover {
         this.xPosition = xPostion;
         this.yPositon = yPositon;
     }
+    public void moveLeft() {
+        currentPosition = leftMap.get(currentPosition);
+    }
 
     @Override
     public String toString() {
